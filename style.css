@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --preto: #000000;
+    --ultra-violet: #4a4e69ff;
+    --cinza: #7a7a7a;
+    --branco: #ffffff;
+    --tyffany: #3AD3CA;
+    --fonte-texto: "Comfortaa", sans-serif;
+}
