@@ -7,37 +7,54 @@ const textoResultado = document.querySelector('.texto-resultado');
 const perguntas = [
     {
         enunciado: "Enunciado 01",
-        Alternativas:[
+        Alternativas: [
             "alternativa 01",
             "alternativa 02"
         ]
     },
     {
         enunciado: "Enunciado 02",
-        Alternativas:[
+        Alternativas: [
             "alternativa 01",
             "alternativa 02"
         ]
     },
     {
         enunciado: "Enunciado 03",
-        Alternativas:[
+        Alternativas: [
             "alternativa 01",
             "alternativa 02"
         ]
     },
     {
         enunciado: "Enunciado 04",
-        Alternativas:[
+        Alternativas: [
             "alternativa 01",
             "alternativa 02"
         ]
     },
     {
         enunciado: "Enunciado 05",
-        Alternativas:[
+        Alternativas: [
             "alternativa 01",
             "alternativa 02"
         ]
     },
 ]
+
+let atual = 0;
+let perguntaAtual;
+
+function mostrarPerguntas() {
+    perguntaAtual = perguntas[atual];
+    caixaPerguntas.textContent = perguntaAtual.enunciado
+}
+
+function mostrarAlternativas() {
+    for (const alternatia of perguntaAtual.alternatias)
+         constbotaoAlternativas = document.createElement("button")
+         botaoAlternativas.textContent = alternatia;
+         caixaAlternativas.appendChild(botaoAlternativas);
+}
+
+mostrarPerguntas();
