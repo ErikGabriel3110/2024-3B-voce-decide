@@ -1,14 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
 
-:root{
+:root {
     --preto: #000000;
-    --ultra-violet: #4a4e69ff;
+    --cinza-escuro: #333333;
     --cinza: #7a7a7a;
     --branco: #ffffff;
     --tyffany: #3AD3CA;
     --fonte-texto: "Comfortaa", sans-serif;
+}
+
+body {
+    background-color: var(--cinza-escuro);
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: var(--fonte-texto);
+}
+
+.caixa-principal {
+    background-color: var(--cinza);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+}
+
+.titulo {
+    color: var(--tyffany);
+    font-family: var(--fonte-texto);
+}
+button{
+    background-color: var(--cinza-escuro);
+    color: var(--tyffany);
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    transition: 0.3s;
+    margin: 10px 10px;
+}
+
+button:hover{
+    background-color: var(--preto);
 }

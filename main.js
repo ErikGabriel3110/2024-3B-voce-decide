@@ -1,41 +1,41 @@
 const caixaPrincipal = document.querySelector('.caixa-principal');
 const caixaPerguntas = document.querySelector('.caixa-perguntas');
-const caixaAlternativas = document.querySelector('.caixa-alternatias');
+const caixaAlternativas = document.querySelector('.caixa-alternativa');
 const caixaResultado = document.querySelector('.caixa-Resultado');
 const textoResultado = document.querySelector('.texto-resultado');
 
 const perguntas = [
     {
         enunciado: "Enunciado 01",
-        Alternativas: [
+        alternativas: [
             "alternativa 01",
             "alternativa 02"
         ]
     },
     {
         enunciado: "Enunciado 02",
-        Alternativas: [
+        alternativas: [
             "alternativa 01",
             "alternativa 02"
         ]
     },
     {
         enunciado: "Enunciado 03",
-        Alternativas: [
+        alternativas: [
             "alternativa 01",
             "alternativa 02"
         ]
     },
     {
         enunciado: "Enunciado 04",
-        Alternativas: [
+        alternativas: [
             "alternativa 01",
             "alternativa 02"
         ]
     },
     {
         enunciado: "Enunciado 05",
-        Alternativas: [
+        alternativas: [
             "alternativa 01",
             "alternativa 02"
         ]
@@ -47,14 +47,17 @@ let perguntaAtual;
 
 function mostrarPerguntas() {
     perguntaAtual = perguntas[atual];
-    caixaPerguntas.textContent = perguntaAtual.enunciado
+    caixaPerguntas.textContent = perguntaAtual.enunciado;
+    mostrarAlternativas();
 }
 
 function mostrarAlternativas() {
-    for (const alternatia of perguntaAtual.alternatias)
-         constbotaoAlternativas = document.createElement("button")
-         botaoAlternativas.textContent = alternatia;
+    for (const alternativa of perguntaAtual.alternativas){
+         const botaoAlternativas = document.createElement("button");
+         botaoAlternativas.textContent = alternativa;
          caixaAlternativas.appendChild(botaoAlternativas);
+
+         }
 }
 
 mostrarPerguntas();
