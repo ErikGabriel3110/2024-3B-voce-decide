@@ -6,20 +6,20 @@ const textoResultado = document.querySelector('.texto-resultado');
 
 const perguntas = [
     {
-        enunciado: "Enunciado 01",
+        enunciado: "Com muitos problemas envolvendo racismo, o convívio é afetado dividindo a humanidade em grupos separados por cor da pele",
         alternativas: [
             {
-                texto: "alternativa 01",
-                afirmacao: "resultado 01"
+                texto: "Buscar maneiras de levar o assunto com uma solução a público",
+                afirmacao: "Com tentativas de mostrar a realidade, projetos foram iniciados à favor da causa"
             },
             {
-                texto: "alternativa 02",
-                afirmacao: "resultado 02"
+                texto: "aceitar que é algo grande demais para que sejá feito algo",
+                afirmacao: "Mesmo sendo um grande problema tentar impedir não levaria a nada"
             },
         ]
     },
     {
-        enunciado: "Enunciado 02",
+        enunciado: "",
         alternativas: [
             {
                 texto: "alternativa 03",
@@ -76,35 +76,37 @@ let atual = 0;
 let perguntaAtual;
 let historiaFinal = "";
 
-function mostrarPerguntas() {
-    if (atual >= perguntas.length) {
-        mostrarResultado();
+function mostrarPerguntas(){
+    if(atual >= perguntas.length){
+        mostraResultado();
         return
     }
     perguntaAtual = perguntas[atual];
     caixaPerguntas.textContent = perguntaAtual.enunciado;
-    caixaAlternativas.textContent = "";
+    caixaAlternativas.textContent = ""
     mostrarAlternativas();
 }
 
-function mostrarAlternativas() {
-    for (const alternativa of perguntaAtual.alternativas) {
+function mostrarAlternativas(){
+    for(const alternativa of perguntaAtual.alternativas){
         const botaoAlternativas = document.createElement("button");
         botaoAlternativas.textContent = alternativa.texto;
-        botaoAlternativas.addEventListener("click", () => respostaSelecionada(alternativa));
-        caixaAlternativas.appendchild(botaoAlternativas);
+        botaoAlternativas.addEventListener("click", () => respostaSelecionada(alternativa))
+        caixaAlternativas.appendChild(botaoAlternativas);
     }
 }
 
-function respostaSelecionada(opcaoSelecionada) {
-    const afirmacoes = opecaoSelecionada.afirmacao;
+function respostaSelecionada(opcaoSelecionada){
+    const afirmacoes = opcaoSelecionada.afirmacao;
     historiaFinal += afirmacoes + " ";
     atual++;
     mostrarPerguntas();
 }
 
-function mostrarResultado(){
-    caixaPerguntas.textContent = " Em 2049 ..."
+function mostraResultado(){
+    caixaPerguntas.textContent = " Inicio do texto... "
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
+
+mostrarPerguntas();
