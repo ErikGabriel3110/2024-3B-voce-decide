@@ -19,54 +19,54 @@ const perguntas = [
         ]
     },
     {
-        enunciado: "",
+        enunciado: "A causa criou grandes revoltas em todo o mundo, por causa de abusos e restrição de direitos",
         alternativas: [
             {
-                texto: "alternativa 03",
-                afirmacao: "resultado 03"
+                texto: "criar um evento onde todos os grandes lideres são questionados e cobrados",
+                afirmacao: "ir contra os lideres causou muitos problemas por fauta de influencia"
             },
             {
-                texto: "alternativa 04",
-                afirmacao: "resultado 04"
+                texto: "evitar ao maximo qualquer tipo de interação sobre ou envolvimento",
+                afirmacao: "com grandes problemas a decisão de evitar estar no meio te isolou de grupos contra o poder politico",
             },
         ]
     },
     {
-        enunciado: "Enunciado 03",
+        enunciado: "Com a brecha criada por pessoas comuns, muitos lideres tentam acata-la para que consigam tomar o poder",
         alternativas: [
             {
-                texto: "alternativa 05",
-                afirmacao: "resultado 05"
+                texto: "intrega-se em grupos que deixaram de se importar com conseguencias dos atos falios",
+                afirmacao: "apenas por noticias é possivel entender os acontecimentos, que levaram a destruição de uma raça"
             },
             {
-                texto: "alternativa 06",
-                afirmacao: "resultado 06"
+                texto: "unir-se a grupos que estão lutando para sobreviver",
+                afirmacao: "as conseguencias são fortes e afetam todos, a falta de segurança inquieta os cidadões negros e brancos que se abstiveram ao governo"
             },
         ]
     },
     {
-        enunciado: "Enunciado 04",
+        enunciado: "A guerra toma força, uma medida imediata é tomada para a erradicação daqueles que se opuseram",
         alternativas: [
             {
-                texto: "alternativa 07",
-                afirmacao: "resultado 07"
+                texto: "lutar uma luta que inicialmente não te pertencia, sacrificando sua vida para a liberdade de outros",
+                afirmacao: "mesmo sem esperançase com toda a confusão você lutou, até não conseguir mais"
             },
             {
-                texto: "alternativa 08",
-                afirmacao: "resultado 08"
+                texto: "render-se ao lado mais forte, com maiores chances de segurança evitando ser caçado como um animal",
+                afirmacao: "fugindo a procura de perdão, encontrou a luz da salvação, sendo recrutado como contribuente para uma humanidade superior"
             },
         ]
     },
     {
-        enunciado: "Enunciado 05",
+        enunciado: "Gandes cidades são dizimadas pessoas morrem para todo lado, a guerra vence seu ápice e os negros cedem à ela",
         alternativas: [
             {
-                texto: "alternativa 09",
-                afirmacao: "resultado 09"
+                texto: "mesmo tendo lutado, os esforços foram em vão, deixando esse mundo como um difunto",
+                afirmacao: "por mais que lembrado por sua valentia nas comunidades que protegeu, sua memoria se apagou junto a eles"
             },
             {
-                texto: "alternativa 10",
-                afirmacao: "resultado 10"
+                texto: "com medo você evita fazer parte disso, apenas espera o fim para então seguir a correnteza",
+                afirmacao: "a guerra acabou com muito, mas você prevaleceu, o mundo pode ser reconstruido novamente à custo de milhares de vidas"
             },
         ]
     },
@@ -104,7 +104,7 @@ function respostaSelecionada(opcaoSelecionada){
 }
 
 function mostraResultado(){
-    caixaPerguntas.textContent = " Inicio do texto... "
+    caixaPerguntas.textContent = "Distopia de um novo mundo"
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
