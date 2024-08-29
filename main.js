@@ -1,7 +1,7 @@
 const caixaPrincipal = document.querySelector('.caixa-principal');
 const caixaPerguntas = document.querySelector('.caixa-perguntas');
-const caixaAlternativas = document.querySelector('.caixa-alternativa');
-const caixaResultado = document.querySelector('.caixa-Resultado');
+const caixaAlternativas = document.querySelector('.caixa-alternativas');
+const caixaResultado = document.querySelector('.caixa-resultado');
 const textoResultado = document.querySelector('.texto-resultado');
 
 const perguntas = [
@@ -9,13 +9,13 @@ const perguntas = [
         enunciado: "Com muitos problemas envolvendo racismo, o convívio é afetado dividindo a humanidade em grupos separados por cor da pele",
         alternativas: [
             {
-                texto: "Buscar maneiras de levar o assunto com uma solução a público",
+                texto: "Buscar maneiras de levar o assunto com uma solução a públic",
                 afirmacao: "Com tentativas de mostrar a realidade, projetos foram iniciados à favor da causa"
             },
             {
                 texto: "aceitar que é algo grande demais para que sejá feito algo",
                 afirmacao: "Mesmo sendo um grande problema tentar impedir não levaria a nada"
-            },
+            }   
         ]
     },
     {
@@ -28,7 +28,7 @@ const perguntas = [
             {
                 texto: "evitar ao maximo qualquer tipo de interação sobre ou envolvimento",
                 afirmacao: "com grandes problemas a decisão de evitar estar no meio te isolou de grupos contra o poder politico",
-            },
+            }
         ]
     },
     {
@@ -104,7 +104,7 @@ function respostaSelecionada(opcaoSelecionada){
 }
 
 function mostraResultado(){
-    caixaPerguntas.textContent = "Distopia de um novo mundo"
+    caixaPerguntas.textContent = " Inicio do texto... "
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
