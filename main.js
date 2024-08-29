@@ -104,7 +104,7 @@ function respostaSelecionada(opcaoSelecionada){
 }
 
 function mostraResultado(){
-    caixaPerguntas.textContent = " Inicio do texto... "
+    caixaPerguntas.textContent = " "
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
